@@ -9736,3 +9736,16 @@ textarea.form-control {
     margin-bottom: 10px; /* Links ke beech mein space dene ke liye */
   }
 }
+@media (max-width: 767px) {
+  /* About section ko force top-to-bottom set karne ke liye */
+  #about-section .row {
+    display: flex;
+    flex-direction: column; /* Mobile par stack kar dega */
+  }
+
+  /* Photo container ko sabse upar laane ke liye */
+  #about-section .col-md-6:first-child {
+    order: -1; /* Isse photo upar chali jayegi */
+    margin-bottom: 20px;
+  }
+}
