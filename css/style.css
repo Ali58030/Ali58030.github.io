@@ -9703,5 +9703,36 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-    
-    
+    /*======================================
+//--//--> MOBILE FIX FOR YELLOW PROFILE IMAGE
+======================================*/
+@media (max-width: 767px) {
+  .about-img {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .about-img img {
+    max-width: 200px !important; /* Image ko exactly 200px chhota karega */
+    height: auto !important; 
+    margin: 0 auto !important; /* Image ko screen ke center mein laayega */
+    display: block !important;
+  }
+}
+/* Mobile par nav menu ko center mein lane ke liye */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center; /* Menu ke text ko center karne ke liye */
+    background: #000;   /* Agar menu ka background transparency ki wajah se kharab dikh raha ho */
+    padding: 20px 0;
+  }
+  
+  #ftco-nav .navbar-nav {
+    margin-left: 0 !important; /* ml-auto ko override karne ke liye */
+    display: block !important;
+  }
+  
+  #ftco-nav .nav-item {
+    margin-bottom: 10px; /* Links ke beech mein space dene ke liye */
+  }
+}
